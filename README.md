@@ -5,4 +5,4 @@ This is a simple plugin that gets the ISO country code from the SIM card to get 
 ## Getting Started
 
 1. Install the plugin by adding it to your `pubspec.yaml`.
-2. Use `getSimCountryCode()` to get the country code.
+2. Use `FlutterSimCountryCode.simCountryCode` to get the country code.

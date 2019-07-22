@@ -25,6 +25,7 @@
         NSString *countryCode = carrier.isoCountryCode;
         if (countryCode != nil) {
             result(countryCode);
+            return;
         }
     }
     

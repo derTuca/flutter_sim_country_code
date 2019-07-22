@@ -1,8 +1,8 @@
 name: flutter_sim_country_code
 description: Flutter sim country code
-version: 0.0.1
+version: 0.0.2
 author: Alexandru Tuca <salexandru.tuca@outlook.com>
-homepage:
+homepage: https://github.com/derTuca/flutter_sim_country_code
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
