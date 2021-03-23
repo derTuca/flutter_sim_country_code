@@ -1,11 +1,11 @@
 name: flutter_sim_country_code
 description: Flutter sim country code
-version: 0.0.2
+version: 0.0.3
 author: Alexandru Tuca <salexandru.tuca@outlook.com>
 homepage: https://github.com/derTuca/flutter_sim_country_code
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
