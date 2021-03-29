@@ -20,7 +20,15 @@
 }
 
 - (void)getSimCountryCode:(FlutterResult)result {
-    CTCarrier *carrier = [[CTTelephonyNetworkInfo new] subscriberCellularProvider];
+    CTCarrier *carrier;
+    if (@available(iOS 12.0, *)) {
+        NSDictionary *carriers = [[CTTelephonyNetworkInfo new] serviceSubscriberCellularProviders];
+        
+        carrier = carriers.allValues.firstObject;
+    } else {
+        carrier = [[CTTelephonyNetworkInfo new] subscriberCellularProvider];
+    }
+    
     if (carrier != nil) {
         NSString *countryCode = carrier.isoCountryCode;
         if (countryCode != nil) {

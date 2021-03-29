@@ -1,11 +1,11 @@
 name: flutter_sim_country_code
 description: Flutter sim country code
-version: 0.0.2
-author: Alexandru Tuca <salexandru.tuca@outlook.com>
+version: 0.1.0
 homepage: https://github.com/derTuca/flutter_sim_country_code
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">2.0.0"
 
 dependencies:
   flutter:
@@ -25,8 +25,12 @@ flutter:
   # be modified. They are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
   plugin:
-    androidPackage: com.example.flutter_sim_country_code
-    pluginClass: FlutterSimCountryCodePlugin
+    platforms:
+      android: 
+        package: com.example.flutter_sim_country_code
+        pluginClass: FlutterSimCountryCodePlugin
+      ios:
+        pluginClass: FlutterSimCountryCodePlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
