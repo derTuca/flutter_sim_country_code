@@ -1,3 +1,7 @@
+## 0.1.1
+
+- Add return to prevent the "Reply already submitted" error on Android. 
+
 ## 0.1.0
 
 - Migrated example app to AndroidX

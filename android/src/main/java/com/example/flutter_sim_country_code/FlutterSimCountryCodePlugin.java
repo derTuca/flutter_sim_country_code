@@ -49,6 +49,7 @@ public class FlutterSimCountryCodePlugin implements FlutterPlugin, MethodCallHan
        String countryId = manager.getSimCountryIso();
        if (countryId != null) {
          result.success(countryId.toUpperCase());
+         return;
        }
      }
      result.error("SIM_COUNTRY_CODE_ERROR", null, null);
