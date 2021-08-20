@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
     try {
       platformVersion = await FlutterSimCountryCode.simCountryCode;
     } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
+      platformVersion = 'Failed to get sim country code.';
     }
 
     // If the widget was removed from the tree while the asynchronous platform
