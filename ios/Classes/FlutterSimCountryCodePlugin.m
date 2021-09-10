@@ -23,8 +23,12 @@
     CTCarrier *carrier;
     if (@available(iOS 12.0, *)) {
         NSDictionary *carriers = [[CTTelephonyNetworkInfo new] serviceSubscriberCellularProviders];
-        
-        carrier = carriers.allValues.firstObject;
+
+        for (CTCarrier *entry in carriers.allValues) {
+            if (entry.isoCountryCode != nil) {
+                carrier = entry;
+            }
+        }
     } else {
         carrier = [[CTTelephonyNetworkInfo new] subscriberCellularProvider];
     }

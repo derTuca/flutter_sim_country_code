@@ -1,3 +1,7 @@
+## 0.1.2
+
+- Fixed a bug on iOS 13
+
 ## 0.1.1
 
 - Add return to prevent the "Reply already submitted" error on Android. 
